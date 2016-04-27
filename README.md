@@ -39,12 +39,19 @@ info.framework.app.jsp_path=/WEB-INF/view/ 表示Controller转向诸如jsp的视
 如上图所示:Action的default value中的:前的部分表示这个对外暴露的url接口的访问方式，后半部分则表示改url接口的路径。
 同时，对于被action注解的方法，如果放回的是View则表示会转到对应的视图，如果返回Data则表示回直接返回json数据。
 @Aspect:类级别的注解，表示标注一个切面类
+
 @Inject:属性级别的注解，表示对该属性自动注入
+
 @Respority:类级别的注解：表示一个类是数据仓库
+
 @Transaction:方法级别的注解，被其注解的方法回自动完成事物的控制特性
+
 @Insert:方法级别的注解，需要传入2个参数，clause表示标准的sql语句，且支持?占位，targetClass表示查询的类，被该注解标注的方法的函数签名的参数必须为Object... 且顺序对应sql中？占位的顺序，且返回值默认是List。默认已经实现事务功能
+
 @Delete:方法级别的注解，clause表示标准的sql语句，且支持?占位，，被该注解标注的方法的函数签名的参数必须为Object...且顺序对应sql中？占位的顺序，且返回值默认是boolean。默认已经实现事务功能
+
 @Update:方法级别的注解，clause表示标准的sql语句，且支持?占位，，被该注解标注的方法的函数签名的参数必须为Object...且顺序对应sql中？占位的顺序，且返回值默认是boolean。默认已经实现事务功能
+
 @Insert:方法级别的注解，clause表示标准的sql语句，且支持?占位，，被该注解标注的方法的函数签名的参数必须为Object...且顺序对应sql中？占位的顺序，且返回值默认是boolean。默认已经实现事务功能
 
 domain层的实体属性名称需要和数据库的列名相同
