@@ -56,6 +56,8 @@ info.framework.app.jsp_path=/WEB-INF/view/ 表示Controller转向诸如jsp的视
 
 domain层的实体属性名称需要和数据库的列名相同
 
+联系方式：qq:513637812
+一个喜欢编程的渣硕，欢迎各路大神前来交流和指教！！！
 
 
 
